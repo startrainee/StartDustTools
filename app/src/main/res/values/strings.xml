@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">StartDustTools</string>
+    <string name="text_no_search_result">没有搜索结果</string>
 </resources>

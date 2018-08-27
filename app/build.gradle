@@ -10,9 +10,27 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    signingConfigs {
+        config {
+            storeFile file('F:/askeystore/mytest.jks')
+            storePassword "123456"
+            keyAlias 'mytest'
+            keyPassword "123456"
+        }
+    }
+
     buildTypes {
+
+        debug {
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+
         release {
-            minifyEnabled false
+            minifyEnabled true
+            signingConfig signingConfigs.config
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -29,6 +47,7 @@ configurations.all {
 
     }
 }
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
