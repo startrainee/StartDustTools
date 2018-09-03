@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="main" type="layout">@layout/activity_main</item>
+    <item name="item" type="layout">@layout/layout_item_view_poi_result</item>
+</resources>

@@ -1,4 +1,4 @@
-package com.stardust.tools.startdusttools;
+package com.stardust.tools.startdusttools.poisearch;
 
 import android.os.Parcel;
 
@@ -13,7 +13,7 @@ public class PoiModel implements SearchSuggestion{
 
     private String body;
 
-    PoiModel(String body) {
+    public PoiModel(String body) {
         this.body = body;
     }
 

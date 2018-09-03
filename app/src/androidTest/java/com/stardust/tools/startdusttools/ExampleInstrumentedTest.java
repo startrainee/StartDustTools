@@ -1,8 +1,9 @@
 package com.stardust.tools.startdusttools;
 
-import android.support.test.filters.SmallTest;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
+
+import com.stardust.tools.startdusttools.activity.MainActivity;
 
 import org.junit.Before;
 import org.junit.Rule;

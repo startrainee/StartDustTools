@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionManager xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <transition android:fromScene="@layout/fragment_transition_before"
+        android:toScene="@layout/fragment_transition_after"
+        android:transition="@transition/slow_auto_transition"
+        tools:ignore="UnusedAttribute" />
+    <transition android:toScene="@layout/fragment_transition_before"
+        android:fromScene="@layout/fragment_transition_after"
+        android:transition="@transition/slow_auto_transition"
+        tools:ignore="UnusedAttribute" />
+</transitionManager>

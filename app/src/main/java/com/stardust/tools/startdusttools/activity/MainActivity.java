@@ -1,6 +1,8 @@
-package com.stardust.tools.startdusttools;
+package com.stardust.tools.startdusttools.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
@@ -25,6 +27,8 @@ import com.baidu.mapapi.search.sug.OnGetSuggestionResultListener;
 import com.baidu.mapapi.search.sug.SuggestionResult;
 import com.baidu.mapapi.search.sug.SuggestionSearch;
 import com.baidu.mapapi.search.sug.SuggestionSearchOption;
+import com.stardust.tools.startdusttools.poisearch.PoiModel;
+import com.stardust.tools.startdusttools.R;
 import com.stardust.tools.startdusttools.poisearch.POISearchResultAdapter;
 
 import java.util.ArrayList;
@@ -45,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main);
         initRecyclerView();
         initPoiSuggestionSearch();
         initPoiSearch();

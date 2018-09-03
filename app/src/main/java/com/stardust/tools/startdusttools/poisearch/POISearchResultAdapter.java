@@ -48,7 +48,7 @@ public class POISearchResultAdapter extends RecyclerView.Adapter<POISearchResult
     @Override
     public POIViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        return new POIViewHolder(mInflater.inflate(R.layout.layout_item_view_poi_result, parent, false));
+        return new POIViewHolder(mInflater.inflate(R.layout.item, parent, false));
     }
 
     @Override
