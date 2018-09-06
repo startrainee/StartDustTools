@@ -27,11 +27,13 @@
         android:layout_height="wrap_content"
        android:text="过渡动画"
        android:onClick="startTransitionActivity"/>
-    <!--
+
         <android.support.v7.widget.AppCompatButton
-            android:id="@+id/btn_main_poi_search"
+            android:id="@+id/btn_binding"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />-->
+            android:layout_height="wrap_content"
+            android:text="数据绑定"
+            android:onClick="startDataBindingActivity"/>
 
 
 </LinearLayout>

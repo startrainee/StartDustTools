@@ -9,4 +9,9 @@
         android:fromScene="@layout/fragment_transition_after"
         android:transition="@transition/slow_auto_transition"
         tools:ignore="UnusedAttribute" />
+    <transition
+        android:fromScene="@layout/fragment_transition_before"
+        android:toScene="@layout/fragment_transition_before_2"
+        android:transition="@transition/slow_auto_transition"
+        tools:ignore="UnusedAttribute" />
 </transitionManager>
