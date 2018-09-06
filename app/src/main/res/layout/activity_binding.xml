@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.stardust.tools.startdusttools.bean.Presenter"/>
+
+        <variable
+            name="dataBean"
+            type="com.stardust.tools.startdusttools.bean.DataBean" />
+
+        <variable
+            name="presenter"
+            type="com.stardust.tools.startdusttools.bean.Presenter"/>
+
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.BindingActivity">
+
+        <TextView
+            android:id="@+id/top_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@{dataBean.name}"/>
+
+        <TextView
+            android:id="@+id/bottom_tv"
+            app:layout_constraintTop_toBottomOf="@+id/top_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@{Integer.toString(dataBean.type)}"/>
+
+        <TextView
+            android:id="@+id/bottom_btn"
+            app:layout_constraintTop_toBottomOf="@+id/bottom_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="24sp"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="变换"
+            android:onClick="@{(view) -> presenter.changeName(dataBean)}"/>
+        <TextView
+            android:id="@+id/bottom1_tv"
+            app:layout_constraintTop_toBottomOf="@+id/bottom_btn"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_height="0dp"
+            android:text="@{Integer.toString(dataBean.type)}"/>
+        <TextView
+            android:id="@+id/bottom1_btn"
+            app:layout_constraintTop_toBottomOf="@+id/bottom1_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="24sp"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="变换2"
+            android:onClick="changeName"/>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
