@@ -5,8 +5,6 @@
 
     <data>
 
-        <import type="com.stardust.tools.startdusttools.bean.Presenter"/>
-
         <variable
             name="dataBean"
             type="com.stardust.tools.startdusttools.bean.DataBean" />

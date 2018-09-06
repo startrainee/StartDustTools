@@ -1,7 +1,6 @@
 package com.stardust.tools.startdusttools.app;
 
 import android.app.Application;
-import android.net.Uri;
 import android.os.StrictMode;
 
 import com.baidu.mapapi.SDKInitializer;
@@ -23,6 +22,7 @@ public class StartDustApp extends Application {
         if(BuildConfig.DEBUG){
             StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().detectAll().penaltyLog().build());
             StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder().detectAll().penaltyLog().build());
+            //Logger.addLogAdapter(new AndroidLogAdapter());
         }
     }
 }

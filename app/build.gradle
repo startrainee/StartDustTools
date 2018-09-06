@@ -72,4 +72,13 @@ dependencies {
     //baidu map
     implementation files('libs/BaiduLBS_Android.jar')
     implementation 'com.android.support:support-annotations:27.1.1'
+
+    //事件总线
+    implementation 'de.greenrobot:eventbus:2.4.1'
+    //Logger 日志
+    implementation 'com.orhanobut:logger:2.2.0'
+    //阿里巴巴 fastjson
+    implementation 'com.alibaba:fastjson:1.1.69.android'
+
+
 }

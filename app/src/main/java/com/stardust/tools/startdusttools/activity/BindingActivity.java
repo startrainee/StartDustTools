@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
+import com.orhanobut.logger.Logger;
 import com.stardust.tools.startdusttools.R;
 import com.stardust.tools.startdusttools.bean.DataBean;
 import com.stardust.tools.startdusttools.bean.Presenter;
@@ -25,10 +26,15 @@ public class BindingActivity extends AppCompatActivity {
     }
 
     public void changeName(View view) {
-        Log.d("wcy","changeName（）： " + dataBean.getType());
-        dataBean.setName("修改之前" + dataBean.getType());
+        Logger.d("wcy","changeName（）： " + dataBean.getType());
+        dataBean.setName("修改asdfasdfasdf之前" + dataBean.getType());
         int type = dataBean.getType() + 111111;
         dataBean.setType(type);
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 }
