@@ -3,7 +3,7 @@ package com.stardust.tools.startdusttools;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
-import com.stardust.tools.startdusttools.activity.MainActivity;
+import com.stardust.tools.startdusttools.activity.PoiSearchActivity;
 
 import org.junit.Before;
 import org.junit.Rule;
@@ -24,10 +24,10 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
 
-    private MainActivity mMainAcvitiy;
+    private PoiSearchActivity mMainAcvitiy;
 
     @Rule
-    public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<>(MainActivity.class);
+    public ActivityTestRule<PoiSearchActivity> mActivityRule = new ActivityTestRule<>(PoiSearchActivity.class);
 
     @Before
     public void setup() {
