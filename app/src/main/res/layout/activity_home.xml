@@ -11,29 +11,42 @@
         android:id="@+id/btn_main_poi_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="poi 搜索"
-        android:onClick="startMainActivity"/>
+        android:onClick="startMainActivity"
+        android:text="poi 搜索" />
 
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/btn_animation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="动画相关"
-        android:onClick="startAnimationActivity"/>
+        android:onClick="startAnimationActivity"
+        android:text="动画相关" />
 
-   <android.support.v7.widget.AppCompatButton
+    <android.support.v7.widget.AppCompatButton
         android:id="@+id/btn_transition"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-       android:text="过渡动画"
-       android:onClick="startTransitionActivity"/>
+        android:onClick="startTransitionActivity"
+        android:text="过渡动画" />
 
-        <android.support.v7.widget.AppCompatButton
-            android:id="@+id/btn_binding"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="数据绑定"
-            android:onClick="startDataBindingActivity"/>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_binding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startDataBindingActivity"
+        android:text="数据绑定" />
 
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_gaoDeLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startLocationActivity"
+        android:text="高德地图" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_pull_to_load"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startRecycleViewActivity"
+        android:text="上拉加载" />
 
 </LinearLayout>

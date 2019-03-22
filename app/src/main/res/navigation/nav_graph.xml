@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/poiSearchActivity">
+
+    <activity
+        android:id="@+id/poiSearchActivity"
+        android:name="com.stardust.tools.startdusttools.activity.PoiSearchActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/lockScreenActivity"
+        android:name="com.stardust.tools.startdusttools.activity.LockScreenActivity"
+        android:label="activity_lock_screen"
+        tools:layout="@layout/activity_lock_screen" />
+    <activity
+        android:id="@+id/mapActivity"
+        android:name="com.stardust.tools.startdusttools.activity.MapActivity"
+        android:label="activity_map"
+        tools:layout="@layout/activity_map" />
+</navigation>

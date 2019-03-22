@@ -28,17 +28,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
-        app:floatingSearch_searchBarMarginLeft="8dp"
-        app:floatingSearch_searchBarMarginTop="8dp"
-        app:floatingSearch_searchBarMarginRight="8dp"
-        app:floatingSearch_searchHint="Search..."
-        app:floatingSearch_suggestionsListAnimDuration="250"
+        app:floatingSearch_close_search_on_keyboard_dismiss="true"
         app:floatingSearch_dimBackground="true"
         app:floatingSearch_dismissFocusOnItemSelection="true"
-        app:floatingSearch_showSearchKey="true"
-        app:floatingSearch_showMoveSuggestionUp="true"
         app:floatingSearch_leftActionMode="showSearch"
-        app:floatingSearch_close_search_on_keyboard_dismiss="true"/>
+        app:floatingSearch_searchBarMarginLeft="8dp"
+        app:floatingSearch_searchBarMarginRight="8dp"
+        app:floatingSearch_searchBarMarginTop="8dp"
+        app:floatingSearch_searchHint="Search..."
+        app:floatingSearch_showMoveSuggestionUp="true"
+        app:floatingSearch_showSearchKey="true"
+        app:floatingSearch_suggestionsListAnimDuration="250" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floating_btn"

@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="之前的了"
+        android:text="之后"
         android:textSize="24sp" />
 
     <android.support.v7.widget.AppCompatImageView
